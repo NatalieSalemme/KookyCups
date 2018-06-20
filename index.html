@@ -1,40 +1,60 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <!DOCTYPE html>
 <html>
  <head>
    <meta charset="UTF-8">
    <title>Kooky Cups</title>
+   <head>
+     <link rel="stylesheet" type="text/css" href="styles.css">
    <header id="header">
-     
+
+
+
+
+
    <nav id="nav-bar">
-     <ul>
-       <li><img src="#" id="header-img"></li>
-     <li><a class="nav-link" href="#about">About</a></li>
-     <li><a class="nav-link" href="#products">Products</a></li>
-     <li><a class="nav-link" href="#contact-us">Contact Us</a></li>
-     </div>
+     <ul class="flex-container">
+     <li><img src="http://i68.tinypic.com/73gsud.png" id="header-img" class="nav-link" alt="Company logo"></a></li>
+     <li><a class="nav-link other-nav" href="#about">About</a></li>
+       <li><a class="nav-link other-nav" href="#products">Products</a></li>
+     <li><a class="nav-link other-nav" href="#contact-us">Contact Us</a></li>
      </ul>
    </nav>
+
+
    </header>
+   </head>
    <body>
      <h3 id="about">About</h3>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/v94zxzMZ6b4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-     
+     <p>Bringing this product from our garage to a startup in full-swing, this has been an incredible journey. All the products displayed on this website are manufactured
+       in the US and we give you the tips and tools to create your own beautiful creation at home.
+     <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/v94zxzMZ6b4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
      <h3 id="products">Products</h3>
+     <div class="product-container">
+       <img src="images-1.jpg">
+       <img src="images-2.jpg">
+       <img src="images-3.jpg">
+       <img src="images-4.jpg">
+       <img src="images-5.jpg">
+       <img src="images-6.jpg">
+   </div>
      <h3 id="contact-us">Contact Us</h3>
-     
-     
-     <form id="form" action="https://www.freecodecamp.com/email-submit">
+     <p>Please feel free to contact us at business@kookycups.com or give us a call at (555) 555-5555. We look forward to hearing from you!
+
+
+     <form id="form">
+        <!-- action="https://www.freecodecamp.com/email-submit" -->
        <label for="email">E-mail</label>
        <input type="email" id="email" placeholder="YourEmail@email.com" name="email">
-       
+
        <input type="submit" id="submit" name="submit">
-<!--        https://www.freecodecamp.com/email-submit -->
+
      </form>
-     
+
    </body>
    <footer>
+     <p>Employment</p>
+
    </footer>
   </head>
 </html>
-
