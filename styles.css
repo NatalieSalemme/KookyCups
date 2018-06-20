@@ -1,0 +1,43 @@
+.flex-container {
+  display: flex;
+  border: 5px solid black;
+  justify-content: space-between;
+  margin: 10;
+  padding: 0;
+  height: 90px;
+  background: gray;
+  flex-direction: row;
+}
+.flex-container > li {
+  list-style-type: none;
+  align-self: flex-end;
+}
+.flex-container > li > a {
+  text-decoration: none;
+  color: white;
+}
+.flex-container > li > img {
+  max-width: 70%;
+  flex-flow: row nowrap;
+}
+.nav-link {
+  padding-right: 1em;
+}
+.other-nav {
+  font-size: 1.5em;
+}
+.flex-container > li > a:hover {
+  color: green;
+}
+body {
+  background-color: lightblue;
+}
+
+
+@media and all (max-width: 670px) {
+
+  .flex-container > li > a {
+    max-width: 50%;
+  }
+
+}
