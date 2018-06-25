@@ -4,7 +4,7 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  height: 90px;
+  height: 7em;
   background: lightgray;
   flex-direction: row;
 }
@@ -27,7 +27,7 @@
   font-size: 1.5em;
 }
 .flex-container > li > a:hover {
-  color: green;
+  color: blue;
 }
 .product-container {
   display: flex;
@@ -67,7 +67,14 @@ h3 {
 body {
   background-color: #e6f9ff
 }
-
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#about {
+  margin-top: 8em;
+}
 
 /*-------Media Queries --------- */
 @media only screen and (max-width: 1145px) {
@@ -83,4 +90,29 @@ grid-template-areas:
   display: flex;
   flex-direction: column;
   }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    box-sizing: content-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-container > li {
+      align-items: center;
+    margin: auto;
+  }
+  #video  {
+    width: 390px;
+    height: 350px;
+  }
+
+@media only screen and (max-width: 400px) {
+  #video {
+    width: 300px;
+    height: 300px;
+  }
+
 }
