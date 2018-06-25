@@ -2,10 +2,10 @@
   display: flex;
   border: 5px solid black;
   justify-content: space-between;
-  margin: 10;
+  margin: 0;
   padding: 0;
   height: 90px;
-  background: gray;
+  background: lightgray;
   flex-direction: row;
 }
 .flex-container > li {
@@ -29,15 +29,58 @@
 .flex-container > li > a:hover {
   color: green;
 }
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 4px solid blue;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.product-container > figure > img {
+max-height: 200px;
+max-width: 200px;
+}
+figure {
+  text-align: center;
+}
+
+h3, p {
+  text-align: center;
+}
+h3 {
+  color: blue;
+}
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#email-label {
+  padding-right: 1em;
+}
+
+#submit {
+  padding-left: 2em;
+}
+
 body {
-  background-color: lightblue;
+  background-color: #e6f9ff
 }
 
 
-@media and all (max-width: 670px) {
-
-  .flex-container > li > a {
-    max-width: 50%;
+/*-------Media Queries --------- */
+@media only screen and (max-width: 1145px) {
+.product-container {
+  display: grid;
+grid-template-areas:
+  "img img"
+  "img img";
   }
-
+}
+@media only screen and (max-width: 585px) {
+  .product-container {
+  display: flex;
+  flex-direction: column;
+  }
 }
