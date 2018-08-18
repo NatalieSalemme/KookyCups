@@ -1,118 +1,41 @@
-.flex-container {
-  display: flex;
-  border: 5px solid black;
-  justify-content: space-between;
+* {
   margin: 0;
   padding: 0;
-  height: 7em;
-  background: lightgray;
+}
+nav {
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  background-color: lightblue;
+  height: 5em;
+  align-items: center;
+  border: 2px solid blue;
+
 }
-.flex-container > li {
+nav li {
   list-style-type: none;
-  align-self: flex-end;
+  padding-right: 2em;
+  color: blue;
+  font-size: 20px;
 }
-.flex-container > li > a {
-  text-decoration: none;
-  color: white;
+.nav-container {
+  display: flex;
+  justify-content: flex-start;
 }
-.flex-container > li > img {
-  max-width: 70%;
-  flex-flow: row nowrap;
+.nav-logo {
+  height: 80px;
+}
+.nav-list {
+  flex-grow:.5;
 }
 .nav-link {
-  padding-right: 1em;
+  text-decoration: none;
 }
-.other-nav {
-  font-size: 1.5em;
-}
-.flex-container > li > a:hover {
-  color: blue;
-}
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  border: 4px solid blue;
-  justify-content: center;
-  margin-bottom: 2em;
-}
-.product-container > figure > img {
-max-height: 200px;
-max-width: 200px;
-}
-figure {
+
+
+
+#copy {
+  margin-top: 900px;
   text-align: center;
-}
-
-h3, p {
-  text-align: center;
-}
-h3 {
-  color: blue;
-}
-#form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#email-label {
-  padding-right: 1em;
-}
-
-#submit {
-  padding-left: 2em;
-}
-
-body {
-  background-color: #e6f9ff
-}
-#nav-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-#about {
-  margin-top: 8em;
-}
-
-/*-------Media Queries --------- */
-@media only screen and (max-width: 1145px) {
-.product-container {
-  display: grid;
-grid-template-areas:
-  "img img"
-  "img img";
-  }
-}
-@media only screen and (max-width: 585px) {
-  .product-container {
-  display: flex;
-  flex-direction: column;
-  }
-
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    box-sizing: content-box;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  .flex-container > li {
-      align-items: center;
-    margin: auto;
-  }
-  #video  {
-    width: 390px;
-    height: 350px;
-  }
-
-@media only screen and (max-width: 400px) {
-  #video {
-    width: 300px;
-    height: 300px;
-  }
 
 }
