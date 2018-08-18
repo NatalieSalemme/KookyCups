@@ -1,21 +1,25 @@
 * {
-  margin: 0;
-  padding: 0;
+  font-family: Palatino;
 }
 nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: lightblue;
-  height: 5em;
+  flex-direction: column;
+  background-color: white;
+  height: auto;
   align-items: center;
-  border: 2px solid blue;
+  border: 1px solid gray;
 
+}
+.nav-shipping {
+  background-color: #757982;
+  width: 100%;
+  height: 45px;
+  color: #e8ecf4;
+  align-self: center;
 }
 nav li {
   list-style-type: none;
   padding-right: 2em;
-  color: blue;
   font-size: 20px;
 }
 .nav-container {
@@ -24,18 +28,40 @@ nav li {
 }
 .nav-logo {
   height: 80px;
+  padding-bottom: 2em;
 }
 .nav-list {
-  flex-grow:.5;
+  flex-direction: row;
+  padding-bottom: 1em;
+  /* margin-left: 15em; */
 }
 .nav-link {
   text-decoration: none;
+  color: black;
+
 }
 
 
 
-#copy {
-  margin-top: 900px;
+body {
+    background-color:#e8ecf2;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product {
+  height: 250px;
+  width: 250px;
+  padding-left: 1.5em;
+}
+.nav-shipping, h3, p, figcaption, iframe, .product-container, #copy {
   text-align: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+#copy {
+  margin-top: 90px;
 
 }
